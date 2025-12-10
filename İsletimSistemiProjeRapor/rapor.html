@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Raporu</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <header>
+        <h1>İşletim Sistemi Planlama Algoritmaları Projesi</h1>
+    </header>
+
+    <section id="giris">
+        <h2>Giriş ve Amaç</h2>
+        <p>Bu proje, işletim sistemi süreç planlama (CPU Scheduling) algoritmalarını C++ kullanarak simüle etmektedir. Amaç, FCFS, Kısa Süreç Önce (SJF) ve Round Robin gibi temel algoritmaların performans metriklerini (bekleme süresi, tamamlanma süresi) hesaplamaktır.</p>
+    </section>
+
+    <section id="metodoloji">
+        <h2>Uygulanan Algoritmalar</h2>
+        <ul>
+            <li><strong>FCFS (First-Come, First-Served):</strong> İlk gelen, ilk hizmet alır.</li>
+            <li><strong>Preemptive SJF (Kısa Süreç Önce - Kesmeli):</strong> Kalan en kısa süreli süreç çalışır.</li>
+            <li><strong>Non-Preemptive SJF (Kısa Süreç Önce - Kesmesiz):</strong> Mevcut iş bitene kadar çalışır.</li>
+            <li><strong>Round Robin:</strong> Zaman dilimi kullanılarak süreçler arasında geçiş yapılır.</li>
+        </ul>
+        <p>Algoritmalar, farklı veri setleri (case1.csv, case2.csv) üzerinde paralel olarak (çoklu iş parçacığı - thread kullanarak) çalıştırılmıştır.</p>
+    </section>
+<br>
+    <section id="sonuc">
+        <h2>Çıktılar ve Sonuç</h2>
+        <p>Her bir algoritma ve veri seti için sonuçlar ayrı bir metin dosyasına kaydedilmiştir (örn: FCFS_case1_results.txt). Bu dosyalar;</p>
+        <ul>
+            <li>Zaman çizelgesi (timeline) gösterimi,</li>
+            <li>Her süreç için bitiş, bekleme ve tamamlanma sürelerini,</li>
+            <li>Maksimum ve Ortalama Bekleme/Tamamlanma Sürelerini içerir.</li>
+        </ul>
+        <p><strong>Önemli Not:</strong> Proje, planlama algoritmalarının etkinliğini ve karmaşıklığını göstermek için temel bir iskelet sunmaktadır.</p>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
